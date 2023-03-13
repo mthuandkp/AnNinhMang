@@ -1,0 +1,143 @@
+
+
+
+== Office 2010 Pro Plus
+- Duong dan chua bo skus Office 2010
+C:\Program Files\Microsoft Office\root\Licenses
+
+Code for Retail
+if exist "%ProgramFiles%\Microsoft Office\Office14\ospp.vbs" cd /d "%ProgramFiles%\Microsoft Office\Office14"
+if exist "%ProgramFiles(x86)%\Microsoft Office\Office14\ospp.vbs" cd /d "%ProgramFiles(x86)%\Microsoft Office\Office14"
+
+for /f %i in ('dir /b ..\root\Licenses\ProPlus_Retail*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses\%i"
+for /f %i in ('dir /b ..\root\Licenses\ProPlusMSDN_Retail*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses\%i"
+
+Code for Volume MAK
+if exist "%ProgramFiles%\Microsoft Office\Office14\ospp.vbs" cd /d "%ProgramFiles%\Microsoft Office\Office14"
+if exist "%ProgramFiles(x86)%\Microsoft Office\Office14\ospp.vbs" cd /d "%ProgramFiles(x86)%\Microsoft Office\Office14"
+
+for /f %i in ('dir /b ..\root\Licenses\ProPlus_KMS_Client*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses\%i"
+for /f %i in ('dir /b ..\root\Licenses\ProPlus_MAK*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses\%i"
+
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+== Office 2013 Pro Plus
+
+- Duong dan chua bo skus Office 2013
+C:\Program Files\Microsoft Office\root\Licenses15
+
+Code for Retail
+if exist "%ProgramFiles%\Microsoft Office\Office15\ospp.vbs" cd /d "%ProgramFiles%\Microsoft Office\Office15"
+if exist "%ProgramFiles(x86)%\Microsoft Office\Office15\ospp.vbs" cd /d "%ProgramFiles(x86)%\Microsoft Office\Office15"
+
+for /f %i in ('dir /b ..\root\Licenses15\ProPlusr_Retail*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses15\%i"
+for /f %i in ('dir /b ..\root\Licenses15\ProPlusMSDNR_retail*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses15\%i"
+
+for /f %i in ('dir /b ..\root\Licenses15\VisioProR_Retail*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses15\%i"
+for /f %i in ('dir /b ..\root\Licenses15\VisioProMSDNR_Retail*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses15\%i"
+
+for /f %i in ('dir /b ..\root\Licenses15\ProjectProR_Retail*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses15\%i"
+for /f %i in ('dir /b ..\root\Licenses15\ProjectProMSDNR_Retail*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses15\%i"
+
+Code for Volume MAK
+if exist "%ProgramFiles%\Microsoft Office\Office15\ospp.vbs" cd /d "%ProgramFiles%\Microsoft Office\Office15"
+if exist "%ProgramFiles(x86)%\Microsoft Office\Office15\ospp.vbs" cd /d "%ProgramFiles(x86)%\Microsoft Office\Office15"
+
+for /f %i in ('dir /b ..\root\Licenses15\ProPlusVL_MAK-*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses15\%i"
+for /f %i in ('dir /b ..\root\Licenses15\ProPlusVL_KMS_Client-*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses15\%i"
+
+for /f %i in ('dir /b ..\root\Licenses15\ProjectProVL_MAK-*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses15\%i"
+
+for /f %i in ('dir /b ..\root\Licenses15\VisioProVL_MAK-*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses15\%i"
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+== Office 2016 Pro Plus
+
+- Duong dan chua bo skus Office 2016
+C:\Program Files\Microsoft Office\root\Licenses16
+
+Code for Retail
+if exist "%ProgramFiles%\Microsoft Office\Office16\ospp.vbs" cd /d "%ProgramFiles%\Microsoft Office\Office16"
+if exist "%ProgramFiles(x86)%\Microsoft Office\Office16\ospp.vbs" cd /d "%ProgramFiles(x86)%\Microsoft Office\Office16"
+
+for /f %i in ('dir /b ..\root\Licenses16\ProPlusR_Retail*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%i"
+for /f %i in ('dir /b ..\root\Licenses16\ProPlusMSDNR_Retail*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%i"
+
+for /f %i in ('dir /b ..\root\Licenses16\VisioProR_Retail*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%i"
+for /f %i in ('dir /b ..\root\Licenses16\VisioProMSDNR_Retail*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%i"
+
+for /f %i in ('dir /b ..\root\Licenses16\ProjectProR_Retail*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%i"
+for /f %i in ('dir /b ..\root\Licenses16\ProjectProMSDNR_Retail*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%i"
+
+
+Code for Volume MAK
+if exist "%ProgramFiles%\Microsoft Office\Office16\ospp.vbs" cd /d "%ProgramFiles%\Microsoft Office\Office16"
+if exist "%ProgramFiles(x86)%\Microsoft Office\Office16\ospp.vbs" cd /d "%ProgramFiles(x86)%\Microsoft Office\Office16"
+
+for /f %i in ('dir /b ..\root\Licenses16\ProPlusVL_MAK-*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%i"
+for /f %i in ('dir /b ..\root\Licenses16\ProPlusVL_KMS_Client-*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%i"
+
+for /f %i in ('dir /b ..\root\Licenses16\VisioProVL_MAK-*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%i"
+for /f %i in ('dir /b ..\root\Licenses16\VisioProVL_KMS_Client-*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%i"
+
+for /f %i in ('dir /b ..\root\Licenses16\ProjectProVL_MAK-*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%i"
+for /f %i in ('dir /b ..\root\Licenses16\ProjectProVL_KMS_Client-*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%i"
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+== Office 2019 Pro Plus
+
+- Duong dan chua bo skus Office 2019
+C:\Program Files\Microsoft Office\root\Licenses16
+
+Code for Retail
+if exist "%ProgramFiles%\Microsoft Office\Office16\ospp.vbs" cd /d "%ProgramFiles%\Microsoft Office\Office16"
+if exist "%ProgramFiles(x86)%\Microsoft Office\Office16\ospp.vbs" cd /d "%ProgramFiles(x86)%\Microsoft Office\Office16"
+
+for /f %i in ('dir /b ..\root\Licenses16\ProPlus2019R_Retail*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%i"
+for /f %i in ('dir /b ..\root\Licenses16\ProPlus2019MSDNR_Retail*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%i"
+
+for /f %i in ('dir /b ..\root\Licenses16\VisioPro2019R_Retail*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%i"
+for /f %i in ('dir /b ..\root\Licenses16\VisioPro2019MSDNR_Retail*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%i"
+
+for /f %i in ('dir /b ..\root\Licenses16\ProjectPro2019R_Retail*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%i"
+for /f %i in ('dir /b ..\root\Licenses16\ProjectPro2019MSDNR_Retail*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%i"
+
+Code for Volume MAK
+if exist "%ProgramFiles%\Microsoft Office\Office16\ospp.vbs" cd /d "%ProgramFiles%\Microsoft Office\Office16"
+if exist "%ProgramFiles(x86)%\Microsoft Office\Office16\ospp.vbs" cd /d "%ProgramFiles(x86)%\Microsoft Office\Office16"
+
+for /f %i in ('dir /b ..\root\Licenses16\ProPlus2019VL_MAK_AE*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%i"
+for /f %i in ('dir /b ..\root\Licenses16\ProPlus2019VL_KMS_Client_AE*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%i"
+
+for /f %i in ('dir /b ..\root\Licenses16\VisioPro2019VL_MAK-*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%i"
+for /f %i in ('dir /b ..\root\Licenses16\VisioPro2019VL_KMS_Client-*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%i"
+
+for /f %i in ('dir /b ..\root\Licenses16\ProjectPro2019VL_MAK-*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%i"
+for /f %i in ('dir /b ..\root\Licenses16\ProjectPro2019VL_KMS_Client-*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%i"
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Ung dung them cac skus Office khac bang cach thay doi dia chi duong dan chua skus va ten skus muon nap them.
+
+Office 2010 xoa (XX)
+Office 2013 (XX) = 15
+Office 2016 (XX) = 16
+Office 2019 (XX) = 16
+
+TEN SKUS = Rename ten file SKUS, copy ten SKUS dan vao
+
+for /f %i in ('dir /b ..\root\Licenses(xx)\TEN SKUS*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses(xx)\%i"
+
+
+
+

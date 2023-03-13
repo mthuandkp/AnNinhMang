@@ -1,0 +1,118 @@
+
+duong dan vao nap skus, su dung phim windows+R coppy & paste (Enter)
+C:\Windows\System32\spp\tokens\skus
+------------------------------------------------------------------------
+WINDOWS
+
+Win 10 EnterpriseS (LTSC 2019)
+cscript.exe %windir%\system32\slmgr.vbs /rilc
+cscript.exe %windir%\system32\slmgr.vbs /upk >nul 2>&1
+cscript.exe %windir%\system32\slmgr.vbs /ckms >nul 2>&1
+cscript.exe %windir%\system32\slmgr.vbs /cpky >nul 2>&1
+cscript.exe %windir%\system32\slmgr.vbs /ipk M7XTQ-FN8P6-TTKYV-9D4CC-J462D
+sc config LicenseManager start= auto & net start LicenseManager
+sc config wuauserv start= auto & net start wuauserv
+clipup -v -o -altto c:\
+echo
+
+Win 10 EnterpriseS (LTSB 2016)
+cscript.exe %windir%\system32\slmgr.vbs /rilc
+cscript.exe %windir%\system32\slmgr.vbs /upk >nul 2>&1
+cscript.exe %windir%\system32\slmgr.vbs /ckms >nul 2>&1
+cscript.exe %windir%\system32\slmgr.vbs /cpky >nul 2>&1
+cscript.exe %windir%\system32\slmgr.vbs /ipk NK96Y-D9CD8-W44CQ-R8YTK-DYJWX
+sc config LicenseManager start= auto & net start LicenseManager
+sc config wuauserv start= auto & net start wuauserv
+clipup -v -o -altto c:\
+echo
+
+Win 10 EnterpriseS (LTSB 2015)
+cscript.exe %windir%\system32\slmgr.vbs /rilc
+cscript.exe %windir%\system32\slmgr.vbs /upk >nul 2>&1
+cscript.exe %windir%\system32\slmgr.vbs /ckms >nul 2>&1
+cscript.exe %windir%\system32\slmgr.vbs /cpky >nul 2>&1
+cscript.exe %windir%\system32\slmgr.vbs /ipk FWN7H-PF93Q-4GGP8-M8RF3-MDWWW
+sc config LicenseManager start= auto & net start LicenseManager
+sc config wuauserv start= auto & net start wuauserv
+clipup -v -o -altto c:\
+echo
+
+Win 10 Enterprise 
+cscript.exe %windir%\system32\slmgr.vbs /rilc
+cscript.exe %windir%\system32\slmgr.vbs /upk >nul 2>&1
+cscript.exe %windir%\system32\slmgr.vbs /ckms >nul 2>&1
+cscript.exe %windir%\system32\slmgr.vbs /cpky >nul 2>&1
+cscript.exe %windir%\system32\slmgr.vbs /ipk XGVPP-NMH47-7TTHJ-W3FW7-8HV2C
+sc config LicenseManager start= auto & net start LicenseManager
+sc config wuauserv start= auto & net start wuauserv
+clipup -v -o -altto c:\
+echo
+
+Win 8.1 Enterpeise
+cscript.exe %windir%\system32\slmgr.vbs /rilc
+cscript.exe %windir%\system32\slmgr.vbs /upk >nul 2>&1
+cscript.exe %windir%\system32\slmgr.vbs /ckms >nul 2>&1
+cscript.exe %windir%\system32\slmgr.vbs /cpky >nul 2>&1
+cscript.exe %windir%\system32\slmgr.vbs /ipk MHF9N-XY6XB-WVXMC-BTDCT-MKKG7
+sc config LicenseManager start= auto & net start LicenseManager
+sc config wuauserv start= auto & net start wuauserv
+clipup -v -o -altto c:\
+echo
+
+==================================================================
+WINDOWS (N)
+
+Win 10 EnterpriseS (N) (LTSC 2019)
+cscript.exe %windir%\system32\slmgr.vbs /rilc
+cscript.exe %windir%\system32\slmgr.vbs /upk >nul 2>&1
+cscript.exe %windir%\system32\slmgr.vbs /ckms >nul 2>&1
+cscript.exe %windir%\system32\slmgr.vbs /cpky >nul 2>&1
+cscript.exe %windir%\system32\slmgr.vbs /ipk 92NFX-8DJQP-P6BBQ-THF9C-7CG2H
+sc config LicenseManager start= auto & net start LicenseManager
+sc config wuauserv start= auto & net start wuauserv
+clipup -v -o -altto c:\
+echo
+
+Win 10 EnterpriseS (N) LTSB 2016
+cscript.exe %windir%\system32\slmgr.vbs /rilc
+cscript.exe %windir%\system32\slmgr.vbs /upk >nul 2>&1
+cscript.exe %windir%\system32\slmgr.vbs /ckms >nul 2>&1
+cscript.exe %windir%\system32\slmgr.vbs /cpky >nul 2>&1
+cscript.exe %windir%\system32\slmgr.vbs /ipk RW7WN-FMT44-KRGBK-G44WK-QV7YK
+sc config LicenseManager start= auto & net start LicenseManager
+sc config wuauserv start= auto & net start wuauserv
+clipup -v -o -altto c:\
+echo
+
+Win 10 EnterpriseS (N) (LTSB 2015)
+cscript.exe %windir%\system32\slmgr.vbs /rilc
+cscript.exe %windir%\system32\slmgr.vbs /upk >nul 2>&1
+cscript.exe %windir%\system32\slmgr.vbs /ckms >nul 2>&1
+cscript.exe %windir%\system32\slmgr.vbs /cpky >nul 2>&1
+cscript.exe %windir%\system32\slmgr.vbs /ipk 2F77B-TNFGY-69QQF-B8YKP-D69TJ
+sc config LicenseManager start= auto & net start LicenseManager
+sc config wuauserv start= auto & net start wuauserv
+clipup -v -o -altto c:\
+echo
+
+Win 10 Enterprise (N)
+cscript.exe %windir%\system32\slmgr.vbs /rilc
+cscript.exe %windir%\system32\slmgr.vbs /upk >nul 2>&1
+cscript.exe %windir%\system32\slmgr.vbs /ckms >nul 2>&1
+cscript.exe %windir%\system32\slmgr.vbs /cpky >nul 2>&1
+cscript.exe %windir%\system32\slmgr.vbs /ipk WGGHN-J84D6-QYCPR-T7PJ7-X766F
+sc config LicenseManager start= auto & net start LicenseManager
+sc config wuauserv start= auto & net start wuauserv
+clipup -v -o -altto c:\
+echo
+
+Win 8.1 Enterprise (N)
+cscript.exe %windir%\system32\slmgr.vbs /rilc
+cscript.exe %windir%\system32\slmgr.vbs /upk >nul 2>&1
+cscript.exe %windir%\system32\slmgr.vbs /ckms >nul 2>&1
+cscript.exe %windir%\system32\slmgr.vbs /cpky >nul 2>&1
+cscript.exe %windir%\system32\slmgr.vbs /ipk TT4HM-HN7YT-62K67-RGRQJ-JFFXW
+sc config LicenseManager start= auto & net start LicenseManager
+sc config wuauserv start= auto & net start wuauserv
+clipup -v -o -altto c:\
+echo
