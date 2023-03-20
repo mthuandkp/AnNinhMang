@@ -30,7 +30,7 @@ public class FileUtils {
 
     public static void main(String[] args) {
         FileUtils e=new FileUtils();
-        File dir = new File("");
+        File dir = new File("src/file_demo");
         String currentDirectory = dir.getAbsolutePath();
         dir = new File(currentDirectory);
 
