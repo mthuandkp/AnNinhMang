@@ -5,6 +5,16 @@ import java.util.List;
 import java.io.File;
 
 public class FileUtils {
+    public static void delete(String fileInput) {
+        File file = new File(fileInput);
+
+        if (file.delete()) {
+            System.out.println("File deleted successfully");
+        } else {
+            System.out.println("Failed to delete the file");
+        }
+    }
+
     public List<String> readAllFileinFolder(File file, int level){
         if (file.isDirectory()) { // Nếu là thư mục thì tiếp tục, ko thì là tập tin -> dừng
             
