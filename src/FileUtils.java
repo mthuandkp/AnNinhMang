@@ -15,18 +15,17 @@ public class FileUtils {
         }
     }
 
-    public List<String> readAllFileinFolder(File file, int level){
+    public static List<String> readAllFileinFolder(List<String> list,File file){
         if (file.isDirectory()) { // Nếu là thư mục thì tiếp tục, ko thì là tập tin -> dừng
-            
-            System.out.println(getPadding(level) + " - " + file.getName());
+
             File[] children = file.listFiles();
             for (File child : children) {
-                this.readAllFileinFolder(child, level + 1); // Gọi đệ quy
+                readAllFileinFolder(list,child); // Gọi đệ quy
             }
         } else {
-            System.out.println(getPadding(level) + " + " + file.getName());
+            list.add(file.getName());
         }
-        return null;
+        return list;
     }
 
     //in ra nhìn cho đẹp
@@ -36,15 +35,5 @@ public class FileUtils {
             sb.append("    "); // Thêm dấu tab.
         }
         return sb.toString();
-    }
-
-    public static void main(String[] args) {
-        FileUtils e=new FileUtils();
-        File dir = new File("src/file_demo");
-        String currentDirectory = dir.getAbsolutePath();
-        dir = new File(currentDirectory);
-
-        
-        e.readAllFileinFolder(dir, 0);
     }
 }
