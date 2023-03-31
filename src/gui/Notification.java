@@ -25,6 +25,9 @@ import javax.swing.JOptionPane;
  */
 public class Notification extends javax.swing.JFrame {
     private String id;
+    //private final String BASE_URL = "http://localhost:3001";
+     private final String BASE_URL = "https://anninhmang.onrender.com";
+
     /**
      * Creates new form Notification
      */
@@ -121,7 +124,7 @@ public class Notification extends javax.swing.JFrame {
     private void validDecrypt(String id) {
         try {
             // Define the API endpoint URL
-            URL url = new URL("http://localhost:3001/valid");
+            URL url = new URL(BASE_URL+"/valid");
 
             // Create an HTTP connection to the API endpoint
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
@@ -145,7 +148,6 @@ public class Notification extends javax.swing.JFrame {
 
             if (connection.getResponseCode() == 200) {
                 String key = br.readLine();
-                System.out.println(key);
                 JOptionPane.showMessageDialog(null, "Thanh toán thành công. Đang giải mã dữ liệu");
 
                 //Thực hiện giải mã

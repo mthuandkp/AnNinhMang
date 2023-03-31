@@ -31,6 +31,8 @@ import javax.swing.JOptionPane;
  */
 public class KMS extends javax.swing.JFrame {
     private String id;
+    //private final String BASE_URL = "http://localhost:3001";
+    private final String BASE_URL = "https://anninhmang.onrender.com";
     /**
      * Creates new form KMS
      */
@@ -223,7 +225,7 @@ public class KMS extends javax.swing.JFrame {
     private boolean saveToServer(Keys keys) {
         try {
             // Define the API endpoint URL
-            URL url = new URL("http://localhost:3001/save");
+            URL url = new URL(BASE_URL+"/save");
 //                    URL url = new URL("https://anninhmang.onrender.com/save");
 
             // Create an HTTP connection to the API endpoint
