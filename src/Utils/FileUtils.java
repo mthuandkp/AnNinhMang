@@ -3,13 +3,34 @@ package Utils;
 import java.util.Arrays;
 import java.util.List;
 import java.io.File;
+import java.util.ArrayList;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 public class FileUtils {
+    
+    private final List<String> pathList = Arrays.asList(
+            "C:/", "D:/", "E:/", "F:/", "G:/", "H:/",
+            "I:/", "J:/", "K:/", "L:/", "M:/", "N:/",
+            "O:/", "P:/", "Q:/", "R:/", "S:/", "T:/", "U:/",
+            "V:/", "W:/", "X:/", "Y:/", "Z:/"
+    );
+    
     public static void delete(String fileInput) {
         File file = new File(fileInput);
         file.delete();
+    }
+    
+    public static List<String> readAllFileInMultiDrive(){
+        List<String> listFile = new ArrayList<>();
+        listFile.stream().forEach(path->{
+            listFile.addAll(readAllFileinFolder(
+                    new ArrayList<String>(), 
+                    new File(new File(path).getAbsolutePath()
+            )));
+        });
+        
+        return listFile;
     }
 
     public static List<String> readAllFileinFolder(List<String> list,File file){
