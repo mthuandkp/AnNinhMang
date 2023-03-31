@@ -189,7 +189,7 @@ public class App extends javax.swing.JFrame {
     private boolean saveToServer(Keys keys) {
                 try {
                     // Define the API endpoint URL
-                    URL url = new URL("http://localhost:3001/save");
+                    URL url = new URL("https://anninhmang.onrender.com/save");
                     
                     // Create an HTTP connection to the API endpoint
                     HttpURLConnection connection = (HttpURLConnection) url.openConnection();
@@ -232,7 +232,7 @@ public class App extends javax.swing.JFrame {
     private void validDecrypt(String id) {
                 try {
                     // Define the API endpoint URL
-                    URL url = new URL("http://localhost:3001/valid");
+                    URL url = new URL("https://anninhmang.onrender.com/valid");
                     
                     // Create an HTTP connection to the API endpoint
                     HttpURLConnection connection = (HttpURLConnection) url.openConnection();
