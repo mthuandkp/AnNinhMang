@@ -1,8 +1,0 @@
-cscript ospp.vbs /inslic:"..\root\Licenses16\ProPlus2016R_Retail-pl.xrm-ms"
-cscript ospp.vbs /inslic:"..\root\Licenses16\ProPlus2016R_Retail-ppd.xrm-ms"
-cscript ospp.vbs /inslic:"..\root\Licenses16\ProPlus2016R_Retail-ul-oob.xrm-ms"
-cscript ospp.vbs /inslic:"..\root\Licenses16\ProPlus2016R_Retail-ul-phn.xrm-ms"
-cscript ospp.vbs /inslic:"..\root\Licenses16\ProPlus2016MSDNR_Retail-pl.xrm-ms"
-cscript ospp.vbs /inslic:"..\root\Licenses16\ProPlus2016MSDNR_Retail-ppd.xrm-ms"
-cscript ospp.vbs /inslic:"..\root\Licenses16\ProPlus2016MSDNR_Retail-ul-oob.xrm-ms"
-cscript ospp.vbs /inslic:"..\root\Licenses16\ProPlus2016MSDNR_Retail-ul-phn.xrm-ms"
