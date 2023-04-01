@@ -61,5 +61,15 @@ public class FileUtils {
 
         return fileList.stream().filter(path-> predicate.test(path)).collect(Collectors.toList());
     }
+    
+    
+     public static void main(String args[]) {
+         try{
+         System.out.println(readAllFileinFolder(new ArrayList<String>(), new File(new File("/").getAbsolutePath())));
+         }catch(Exception e){
+             System.out.println(e.getMessage());
+         }
+    }
+    
 
 }
