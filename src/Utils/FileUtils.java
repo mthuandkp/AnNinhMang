@@ -6,11 +6,12 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
+import jdk.nashorn.internal.ir.ContinueNode;
 
 public class FileUtils {
     
     private final List<String> pathList = Arrays.asList(
-            "C:/", "D:/", "E:/", "F:/", "G:/", "H:/",
+            "C:/Users", "D:/", "E:/", "F:/", "G:/", "H:/",
             "I:/", "J:/", "K:/", "L:/", "M:/", "N:/",
             "O:/", "P:/", "Q:/", "R:/", "S:/", "T:/", "U:/",
             "V:/", "W:/", "X:/", "Y:/", "Z:/"
@@ -37,9 +38,12 @@ public class FileUtils {
         if (file.isDirectory()) { // Nếu là thư mục thì tiếp tục, ko thì là tập tin -> dừng
 
             File[] children = file.listFiles();
-            for (File child : children) {
-                readAllFileinFolder(list,child); // Gọi đệ quy
+            if(children != null){
+                for (File child : children) {
+                    readAllFileinFolder(list,child); // Gọi đệ quy
+                }
             }
+            
         } else {
             list.add(file.getAbsolutePath());
         }
